@@ -2,6 +2,10 @@
 
 \usepackage[margin=1in,includefoot]{geometry}
 
+%graphics preamble
+\usepackage{graphicx} %allow import images
+\usepackage{float} %allow control of float position
+
 \begin{document}
 
 \begin{titlepage}
@@ -66,13 +70,109 @@ in this web app we will minimize the time it takes to make a transaction between
 To make sure that the web application replaces the paper money its full uses in the game, it is important to identify the diffrent user of the system
 
 \subsection {User Actors}
-\subsubsection {Admin}
+	\subsubsection {Admin}
  An external user who is an administrator of the system and can access a set of use cases related to managing the game
-\subsubsection {Guest}
+	\subsubsection {Guest}
 An external user who is not a registered player or administrator and can access a limited set of use cases
-\subsubsection {Player}
+	\subsubsection {Player}
  An external user who is a registered player and can access a set of use cases related to playing the game
- \section{Static Context Diagram}
+\subsection{Static Context Diagram}
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/SCD.png}
+	 \caption{Static Context Diagram}
+\end{figure}
+
+\subsection{Functional Requirements}
+\subsubsection{Guest}
+\subsubsection{Admin}
+\subsubsection{Player}
+
+\subsection{Non-Functional Requirements}
+\subsubsection{Security}
+\subsubsection{Usability}
+\subsubsection{Performance}
+\subsubsection{Relability}
+\subsubsection{Scalability}
+\subsubsection{Maintainability}
+\subsubsection{Compatibility}
+
+\subsection{Conclusion}
+
+\section{Architecture and Design}
+
+\subsection{Introduction}
+
+\subsection{Global Usecase Diagram}
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/global_ucd.png}
+	 \caption{Global Usecase Diagram}
+\end{figure}
+
+\subsubsection{Guest Usecase Diagram}
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/guest_ucd.png}
+	 \caption{Guest Usecase Diagram}
+\end{figure}
+
+\subsubsection{Admin Usecase Diagram}
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/admin_ucd.png}
+	 \caption{Admin Usecase Diagram}
+\end{figure}
+
+\subsubsection{Player Usecase Diagram}
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/player_ucd.png}
+	 \caption{Player Usecase Diagram}
+\end{figure}
+
+\subsection{Usecases Study}
+\subsubsection{Host new game by the guest actor usecase}
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/guest_host_game_SD.png}
+	 \caption{Host new game by the guest actor Sequence Diagram}
+\end{figure}
+
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/guest_host_game_detailedSD.png}
+	 \caption{Host new game by the guest actor detailed Sequence Diagram}
+\end{figure}
+
+\subsubsection{show available games by the guest actor usecase}
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/guest_show_available_games_SD.png}
+	 \caption{Show available games by the guest actor Sequence Diagram}
+\end{figure}
+
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/guest_show_available_games_detailedSD.png}
+	 \caption{Show available games by the guest actor detailed Sequence Diagram}
+\end{figure}
+
+\subsubsection{join game by the guest actor usecase}
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/guest_join_game_SD.png}
+	 \caption{Join game by the guest actor Sequence Diagram}
+\end{figure}
+
+ \begin{figure}[H]
+	 \centering
+	 \includegraphics[height=3in]{../thesis_tex/assets/diagrams/guest_join_game_detailedSD.png}
+	 \caption{Join game by the guest actor detailed Sequence Diagram}
+\end{figure}
+
+
+
 
 
 \end{document}
